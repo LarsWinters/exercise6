@@ -2,6 +2,9 @@ package com.practicalunittesting.chp10;
 
 import org.junit.Test;
 
+import java.awt.*;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -25,8 +28,8 @@ public class CarSearchTest {
 
         Engine engine1 = mock(Engine.class);
         Engine engine2 = mock(Engine.class);
-        when(engine1.getNumberOfCylinders()).thenReturn(7);
-        when(engine2.getNumberOfCylinders()).thenReturn(4);
+        when(engine1.getNbOfCylinders()).thenReturn(7);
+        when(engine2.getNbOfCylinders()).thenReturn(4);
 
         when(car1.getEngine()).thenReturn(engine1);
         when(car2.getEngine()).thenReturn(engine2);
