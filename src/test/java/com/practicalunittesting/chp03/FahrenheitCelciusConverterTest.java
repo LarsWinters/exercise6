@@ -25,4 +25,6 @@ public class FahrenheitCelciusConverterTest {
 		assertEquals(37, FahrenheitCelciusConverter.toCelcius(100));
 		assertEquals(100, FahrenheitCelciusConverter.toCelcius(212));
 	}
+
+	//Comment
 }
